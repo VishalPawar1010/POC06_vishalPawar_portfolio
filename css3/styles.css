@@ -5,6 +5,7 @@
 /* fav color #0369a1 */ 
 :root{
     --primary-color : #0369a1;
+    --secondary-color : #4c7f9b ;
     --off-white : #dbe7ee;
 }
 hr{
@@ -28,7 +29,7 @@ body{
     color: white;
 }
 .link-secondary{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 0.5rem;
     color: white;
 }
@@ -46,13 +47,18 @@ body{
 .nav{
     background-color: var(--primary-color);
     color: white;
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    padding: 0.1%;
 }
 .nav .navBrand{
     font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 .nav .nav-pills{
     text-align: right;
+    margin-bottom: 1rem;
 }
 .nav .link{
     color: white;
@@ -70,35 +76,48 @@ body{
 .hero-heading{
     padding: 1rem;
     color: var(--primary-color);
+    text-align: center;
 }
 
 /* Section */
-.section{
+.section {
     
     padding: 2rem;
 }
 
-.section h1{
+.section h1 {
     text-align: center;
 }
 .ow{
     background-color: var(--off-white);
 }
 
+/* container */
+.container{
+    text-align: center;
+}
+.container-centre{
+
+}
+
 /* footer */
 .footer{
     background-color: var(--primary-color);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
     color: white;
     border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
 
+}
+.footer .footBrand{
+    font-weight: bold;
 }
 .footer .link{
     color: white;
 }
-.footer .ul{
-    padding-inline-start: 0px;
+.footer ul{
+    padding-inline-start: 1rem;
 }
 .social-links{
 
