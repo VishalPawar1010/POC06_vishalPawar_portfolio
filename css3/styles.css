@@ -6,7 +6,8 @@
 :root{
     --primary-color : #0369a1;
     --secondary-color : #4c7f9b ;
-    --off-white : #dbe7ee;
+    --off-white: #f3f4f6;
+    --dark-gray: #6b7280;
 }
 hr{
     margin: 2rem;
@@ -23,15 +24,21 @@ body{
     padding: 0.5rem 1rem;
 }
 
-.link-primary{
+.link-primary {
+    max-width: 140px;
+    padding: 0.6rem 1.2rem;
     background-color: var(--primary-color);
-    border-radius: 0.5rem;
-    color: white;
+    color: #fff;
+    margin: 1rem auto;
+    border-radius: 2rem;
 }
-.link-secondary{
-    background-color: var(--secondary-color);
-    border-radius: 0.5rem;
-    color: white;
+.link-secondary {
+    max-width: 140px;
+    margin: 1rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 /* Lists */
@@ -50,6 +57,9 @@ body{
     border-bottom-left-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
     padding: 0.1%;
+}
+.nav .link-active {
+    font-weight: bold;
 }
 .nav .navBrand{
     font-weight: bold;
