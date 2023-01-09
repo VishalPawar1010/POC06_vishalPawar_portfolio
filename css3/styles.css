@@ -44,6 +44,7 @@ body{
 /* Lists */
 .list-non-bullet{
     list-style: none;
+    padding-inline-start: 0px;
 }
 
 .list-item-inline{
@@ -88,7 +89,14 @@ body{
     color: var(--primary-color);
     text-align: center;
 }
-
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--dark-gray);
+}
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
 /* Section */
 .section {
     
@@ -101,13 +109,23 @@ body{
 .ow{
     background-color: var(--off-white);
 }
+.showcase-list {
+    /* padding: 2rem; */
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    /* margin: 3rem auto; */
+}
 
 /* container */
 .container{
     text-align: center;
+    /* padding: 0rem 1rem; */
 }
 .container-centre{
-
+        max-width: 900px;
+        width: 100%;
+        margin: auto;
 }
 
 /* footer */
